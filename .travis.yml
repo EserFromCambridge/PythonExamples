@@ -1,8 +1,10 @@
+os: osx
 language: python
 python:
  - "3.6"
-script: cd DataStructures/Stack
-python -m unittest teststack
+script: 
+ - cd DataStructures/Stack
+ - python -m unittest teststack
 deploy:
   provider: pages
   skip-cleanup: true
